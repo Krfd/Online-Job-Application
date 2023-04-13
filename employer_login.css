@@ -1,0 +1,126 @@
+:root {
+    --primary: hsla(100, 100%, 100%, 0.8);
+    --primary-light: hsla(100, 100%, 100%, 0.5);
+    --primary-lighter: hsla(100, 100%, 100%, 0.3);
+    --secondary: hsla(0, 0%, 0%, 0.8);
+    --secondary-light: hsla(0, 0%, 0%, 0.5);
+    --secondary-lighter: hsla(0, 0%, 0%, 0.3);
+    --blanch: hsla(36, 100%, 90%, 0.5);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background: linear-gradient(var(--primary-lighter), var(--primary-lighter)),
+        url(background/skyscraper.jpg);
+    background-attachment: fixed;
+    background-position: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    scroll-behavior: smooth;
+}
+.form {
+    padding: 50px;
+    width: 50%;
+    margin-top: 200px;
+    background: hsla(100, 100%, 100%, 1);
+}
+.form h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+}
+.form .form-floating {
+    display: block;
+    margin: auto;
+    width: 75%;
+}
+.form-control {
+    margin: 10px auto;
+}
+.form-control:focus {
+    box-shadow: none;
+    border-color: black;
+}
+.btn {
+    display: block;
+    margin: auto;
+}
+.btn:focus {
+    box-shadow: none;
+}
+.form p {
+    text-align: center;
+    margin: 10px auto;
+}
+.form p a {
+    text-decoration: none;
+}
+.form p a:hover {
+    text-decoration: underline;
+}
+.modal {
+    padding: 20px;
+}
+@media only screen and (max-width: 600px) {
+    .form {
+        width: 100%;
+        padding: 30px 10px;
+    }
+    .form h1 {
+        font-size: 2rem;
+    }
+    .modal {
+        padding: 40px;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .form {
+        width: 100%;
+        padding: 50px;
+    }
+    .form h1 {
+        font-size: 2.5rem;
+    }
+    .modal {
+        padding: 40px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .form {
+        width: 80%;
+        padding: 30px 10px;
+    }
+    .form h1 {
+        font-size: 3rem;
+    }
+    .modal {
+        padding: 20px;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .form {
+        width: 80%;
+        padding: 30px 10px;
+    }
+    .form h1 {
+        font-size: 3rem;
+    }
+    .modal {
+        padding: 20px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .form {
+        width: 50%;
+        padding: 30px 10px;
+    }
+    .form h1 {
+        font-size: 3rem;
+    }
+    .modal {
+        padding: 20px;
+    }
+}
